@@ -1,4 +1,4 @@
-package org.example.demo.ui.home;
+package org.example.demo.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -26,7 +26,6 @@ public class HomeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println("Initialize");
-        System.out.println("Home Controller");
+        System.out.println("Initialize Home Controller");
     }
 }

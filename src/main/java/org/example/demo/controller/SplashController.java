@@ -1,4 +1,4 @@
-package org.example.demo.ui.splash;
+package org.example.demo.controller;
 
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
@@ -58,8 +58,10 @@ public class SplashController implements Initializable {
                         }
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
+                        stage.setMaximized(true);
                         stage.show();
                         anchorLayout.getScene().getWindow().hide();
+
                     });
                 });
             } catch (InterruptedException ex) {

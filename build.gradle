@@ -17,14 +17,14 @@ ext {
   junitVersion = '5.10.0'
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
   options.encoding = 'UTF-8'
 }
 
 application {
   mainModule = 'org.example.demo'
-  //mainClass = 'org.example.demo.ui.home.HomeApplication'
-  mainClass = 'org.example.demo.MyApp'
+  mainClass = 'org.example.demo.ui.splash.Splash'
+  //mainClass = 'org.example.demo.MyApp'
 }
 
 javafx {
@@ -42,6 +42,7 @@ test {
 useJUnitPlatform()}
 
 jlink {
+  //imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
   imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
   options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
   launcher {
