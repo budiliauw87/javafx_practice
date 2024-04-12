@@ -1,0 +1,19 @@
+/**
+* Practice JavaFX
+* ==================
+* CreatedAt :  2024-04-12 
+* Author : Budiliauw87
+*/
+
+.primary-bg{
+    -fx-background-color : #FFF;
+}
+.sidebar-bg{
+    -fx-background-color : #F3F3F3;
+}
+
+.list-bg {
+  -fx-background-color: -fx-background;
+  -fx-background-insets: 0;
+  -fx-padding: 1;
+}

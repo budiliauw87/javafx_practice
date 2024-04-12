@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="600.0" styleClass="primary-bg" stylesheets="@../styles/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.ui.home.HomeController">
+    <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="145.0" styleClass="sidebar-bg" stylesheets="@../styles/main.css">
+        <HBox.margin>
+            <Insets />
+        </HBox.margin>
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+        </padding>
+        <Label text="Practice JavaFX">
+            <font>
+                <Font name="Arial Bold" size="12.0" />
+            </font>
+        </Label>
+        <ListView id="listMenu" prefHeight="364.0" prefWidth="129.0" styleClass="list-bg" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets bottom="8.0" top="8.0" />
+            </VBox.margin>
+        </ListView>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="161.0" text="Copyright 2024&#10;Version 1.0" textAlignment="CENTER" textFill="#656565">
+            <font>
+                <Font name="Arial" size="10.0" />
+            </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+        </Label>
+    </VBox>
+</HBox>
