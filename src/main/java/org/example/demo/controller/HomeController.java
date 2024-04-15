@@ -2,7 +2,6 @@ package org.example.demo.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
@@ -11,21 +10,19 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     @FXML
-    private Label welcomeText;
+    private Label labelVersion,labelApp;
 
-    @FXML
-    private Button testButton;
 
     @FXML
     private ListView listMenu;
 
-    @FXML
-    protected void onTesClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        for(int i = 1; i<=20;i++){
+            listMenu.getItems().add("Menu "+ i);
+        }
+        listMenu.getSelectionModel().select(0);
         System.out.println("Initialize Home Controller");
     }
 }

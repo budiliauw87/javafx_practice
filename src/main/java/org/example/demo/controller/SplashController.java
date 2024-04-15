@@ -52,13 +52,14 @@ public class SplashController implements Initializable {
                         Stage stage = new Stage();
                         Parent root = null;
                         try {
-                            root = FXMLLoader.load(getClass().getResource("/layout/hello-view.fxml"));
+                            root = FXMLLoader.load(getClass().getResource("/layout/home-view.fxml"));
                         } catch (IOException ex) {
                             Logger.getLogger(SplashController.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
-                        stage.setMaximized(true);
+                        stage.setTitle("Practice JavaFx");
+                        //stage.setMaximized(true);
                         stage.show();
                         anchorLayout.getScene().getWindow().hide();
 
